@@ -1,0 +1,181 @@
+/* !Global Styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li,
+label,
+input,
+p {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* !NAV SECTION WITH HERO */
+.main-head {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    box-shadow: 0px 1px;
+}
+
+nav {
+    min-height: 7vh;
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+nav title {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex: wrap;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    cursor: pointer;
+}
+
+/** Navbar Transition **/
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+/* !ABOUT ME / INTRO */
+
+.About-Me {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent), linear-gradient(transparent, rgba(0, 0, 0, .7)), url("images/retrochip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.About-Me h3 {
+    padding: 2rem;
+}
+
+.about-text {
+    width: 90%;
+    margin: auto;
+    text-shadow: 0px 7px 6px #000000;
+}
+
+.social-links {
+    position: absolute;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.social-links li {
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+
+
+/* !PERSONAL PROJECTS SECTION */
+#Work {
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.Work-head {
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.Work-head h3 {
+    font-size: 2rem !important;
+    width: 50%;
+}
+
+.circuit {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+/* !Media Query */
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 45%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
+}
